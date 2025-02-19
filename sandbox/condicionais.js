@@ -137,19 +137,91 @@
 
 //Exercicio avancado 4
 
-let ano = prompt("Digite um ano");
+// let ano = prompt("Digite um ano");
 
-console.log(ano);
+// console.log(ano);
 
-if (ano % 4 === 0) {
+// if (ano % 4 === 0) {
 
-    console.log("Bissexto");
+//     console.log("Bissexto");
 
-} else if (ano % 400 === 0) {
+// } else if (ano % 400 === 0) {
 
-        console.log("Bissexto");
-}
-    else {
-    console.log("Nao e bissexto")
+//         console.log("Bissexto");
+// }
+//     else {
+//     console.log("Nao e bissexto")
     
+// }
+
+//Exercicio avancado 2
+//2. **Conversão de notas para conceitos:**
+// - O usuário insere uma nota (0-100).
+// - Converta para conceitos:
+//     - `A` (90-100), `B` (80-89), `C` (70-79), `D` (60-69), `F` (<60).
+
+// let nota = parseFloat(prompt("Digite uma nota"));
+
+// if (nota >= 90 && nota <=100){
+//     console.log("A")
+// }
+
+// else if (nota >= 80 && nota <=89){
+//     console.log("B")
+// }
+
+// else if (nota >= 70 && nota <=79){
+//     console.log("C")
+// }
+
+// else if (nota >= 60 && nota <=69){
+//     console.log("D")
+// }
+// else if (nota <=60){
+//     console.log("E")
+// }
+
+let num1 = parseFloat(prompt("Insira o primeiro numero: "));
+let num2 = parseFloat(prompt("Insira outro numero: "));
+let operacao = prompt("Insira a operacao. Ex: +, -, *, / . ");
+
+switch (operacao) {
+    case "+":
+
+        let resultadoSoma = num1 + num2;
+        console.log("resultado", resultadoSoma);
+
+        break;
+
+    case "-":
+
+        let resultadoSubtracao = num1 - num2;
+        console.log("resultado", resultadoSubtracao);
+
+        break;
+
+    case "*":
+
+        let resultadoMultiplicacao = num1 * num2;
+        console.log("resultado", resultadoMultiplicacao);
+
+        break;
+
+    case "/":
+
+        if (num2 == 0) {
+            console.log("Voce nao pode dividir um numero por zero");
+        }    else {resultado = num1 / num2;
+            console.log("resultado", resultado);
+        }
+
+        let resultadoDivisao = num1 / num2;
+        console.log("resultado", resultadoDivisao);
+
+        break;
+
+    default:
+
+    console.log("Operador Invalido")
+
 }
