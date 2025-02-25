@@ -1,3 +1,4 @@
+
 function exercicioRep01 () {
 for (let contador = 1; contador <= 5; contador++) {
     console.log("Contagem: ", contador);
