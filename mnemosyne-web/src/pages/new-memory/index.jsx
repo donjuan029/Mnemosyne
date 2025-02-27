@@ -94,7 +94,7 @@ const NewMemory = () => {
                     </label>
                 </div>
 
-                <button onClick={() => onCreateMemory} className="create-memory-btn">Criar memória</button>
+                <button onClick={() => onCreateMemory()} className="create-memory-btn">Criar memória</button>
             </main>
 
             <footer className="app-footer">

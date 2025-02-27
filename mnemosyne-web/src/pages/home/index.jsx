@@ -36,11 +36,11 @@ const Home = () => {
 
                     {memories.map((memory, index)  => (
 
-                        <a key ={index}href="{`/memory?id=${memory.id}`}">
+                        <a key ={index} href={`/memory?id=${memory.id}`}>
 
                         <div className="memory-card">
 
-                            <div className="image" style={{backgroundImage: `$(memory.images[0])`}}></div>
+                            <div className="image" style={{backgroundImage: `url(${memory.images[0]})`}}></div>
 
                             <h2>{memory.title}</h2>
 
